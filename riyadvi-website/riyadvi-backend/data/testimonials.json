@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "quote": "The team delivered beyond expectations!",
+    "photo": "https://png.pngtree.com/png-vector/20240529/ourlarge/pngtree-black-and-white-silhouette-of-an-employee-with-short-hair-vector-png-image_6965069.png"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "quote": "Professional, innovative, and reliable.",
+    "photo": "https://png.pngtree.com/png-vector/20240529/ourlarge/pngtree-black-and-white-silhouette-of-an-employee-with-short-hair-vector-png-image_6965069.png"
+  },
+  {
+    "id": 3,
+    "name": "David Johnson",
+    "quote": "Our go-to partner for digital solutions.",
+    "photo": "https://png.pngtree.com/png-vector/20240529/ourlarge/pngtree-black-and-white-silhouette-of-an-employee-with-short-hair-vector-png-image_6965069.png"
+  }
+]

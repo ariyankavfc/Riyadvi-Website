@@ -1,0 +1,36 @@
+version: "3.8"
+services:
+  db:
+    image: mysql:8.0
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: riyadvi_db
+      MYSQL_USER: riyadvi_user
+      MYSQL_PASSWORD: riyadvi_pass
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  backend:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: mysql+pymysql://riyadvi_user:riyadvi_pass@db:3306/riyadvi_db?charset=utf8mb4
+      FLASK_ENV: development
+      UPLOAD_FOLDER: /app/uploads
+      CORS_ORIGINS: http://localhost:5173
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    volumes:
+      - .:/app
+      - uploads:/app/uploads
+
+volumes:
+  db_data:
+  uploads:

@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "slug": "ecommerce-platform",
+    "title": "E-Commerce Platform",
+    "client": "RetailX",
+    "problem": "Client needed an online store with payment gateway.",
+    "solution": "Developed a scalable React + Node.js app with Stripe integration.",
+    "result": "Increased online sales by 40% in 3 months.",
+    "tools": ["React", "Node.js", "MongoDB"]
+  },
+  {
+    "id": 2,
+    "slug": "healthcare-app",
+    "title": "Healthcare Mobile App",
+    "client": "HealthPro",
+    "problem": "No digital platform for patient bookings.",
+    "solution": "Built cross-platform app with React Native.",
+    "result": "Enabled 5k+ bookings in the first quarter.",
+    "tools": ["React Native", "Firebase"]
+  },
+  {
+    "id": 3,
+    "slug": "corporate-website",
+    "title": "Corporate Website Redesign",
+    "client": "FinServe",
+    "problem": "Outdated website with poor UI/UX.",
+    "solution": "Redesigned using Tailwind + Next.js.",
+    "result": "Boosted engagement and reduced bounce rate by 60%.",
+    "tools": ["Next.js", "TailwindCSS"]
+  }
+]

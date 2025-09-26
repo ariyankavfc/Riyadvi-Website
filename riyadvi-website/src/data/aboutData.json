@@ -1,0 +1,38 @@
+{
+  "story": "Riyadvi Software Technologies was founded in 2021 with a vision to empower businesses through innovative digital solutions. Since our inception, we have been delivering cutting-edge web, mobile, and software development services that drive measurable growth for our clients.",
+
+  "vision": "To become a global leader in providing premium, innovative, and scalable technology solutions that help businesses grow and transform digitally.",
+
+  "mission": "To deliver end-to-end software solutions with a focus on creativity, excellence, and measurable impact—building long-term partnerships with clients and fostering a culture of innovation within our team.",
+
+  "awards": [
+    {
+      "title": "Star of Excellence",
+      "year": "2021",
+      "description": "Awarded for outstanding digital innovation."
+    },
+    {
+      "title": "ISO Certification",
+      "year": "2022",
+      "description": "Certified for maintaining high quality standards."
+    }
+  ],
+
+  "team": [
+    {
+      "name": "John Doe",
+      "role": "CEO & Founder",
+      "image": "https://png.pngtree.com/png-vector/20240529/ourlarge/pngtree-black-and-white-silhouette-of-an-employee-with-short-hair-vector-png-image_6965069.png"
+    },
+    {
+      "name": "Jane Smith",
+      "role": "CTO",
+      "image": "https://png.pngtree.com/png-vector/20240529/ourlarge/pngtree-black-and-white-silhouette-of-an-employee-with-short-hair-vector-png-image_6965069.png"
+    },
+    {
+      "name": "Alex Johnson",
+      "role": "Head of Design",
+      "image": "https://png.pngtree.com/png-vector/20240529/ourlarge/pngtree-black-and-white-silhouette-of-an-employee-with-short-hair-vector-png-image_6965069.png"
+    }
+  ]
+}

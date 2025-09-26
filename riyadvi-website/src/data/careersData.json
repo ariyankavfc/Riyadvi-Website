@@ -1,0 +1,37 @@
+{
+  "departments": ["All", "Development", "Design", "Marketing", "Database"],
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Frontend Developer",
+      "department": "Development",
+      "location": "Chennai, India",
+      "type": "Full-time",
+      "description": "We are looking for a skilled frontend developer with experience in React and TailwindCSS."
+    },
+    {
+      "id": 2,
+      "title": "Backend Developer",
+      "department": "Development",
+      "location": "Remote",
+      "type": "Full-time",
+      "description": "Join our backend team to build APIs using Node.js/Flask and work with cloud deployments."
+    },
+    {
+      "id": 3,
+      "title": "UI/UX Designer",
+      "department": "Design",
+      "location": "Bangalore, India",
+      "type": "Contract",
+      "description": "We are hiring a creative UI/UX designer with a strong portfolio in web and mobile design."
+    },
+    {
+      "id": 4,
+      "title": "Digital Marketing Specialist",
+      "department": "Marketing",
+      "location": "Remote",
+      "type": "Internship",
+      "description": "Help us grow our brand with SEO, SEM, and social media campaigns."
+    }
+  ]
+}

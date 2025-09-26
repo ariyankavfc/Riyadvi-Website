@@ -1,0 +1,33 @@
+{
+  "categories": ["All", "Web Development", "App Development", "UI/UX Design", "Digital Marketing","Database Administrator"],
+  "posts": [
+    {
+      "id": 1,
+      "title": "The Future of Web Development",
+      "excerpt": "Discover the latest trends in web development and how modern frameworks are shaping the future of the web.",
+      "image": "https://www.neprantechnologies.in/assets/images/website-dev.jpg",
+      "category": "Web Development"
+    },
+    {
+      "id": 2,
+      "title": "Why UI/UX Design Matters",
+      "excerpt": "Great design is not just about looks. Learn why UI/UX design is the backbone of digital product success.",
+      "image": "https://cdn.ostad.app/course/photo/2024-12-19T15-52-04.170Z-Course%20Thumbnail%2013%20(1).jpg",
+      "category": "UI/UX Design"
+    },
+    {
+      "id": 3,
+      "title": "Mobile App Development Best Practices",
+      "excerpt": "Explore proven strategies to build successful mobile apps that users love and businesses value.",
+      "image": "https://focustapps.com/wp-content/uploads/2024/08/custom-mobile-app-thumbnail.jpg",
+      "category": "App Development"
+    },
+    {
+      "id": 4,
+      "title": "Boosting Growth with Digital Marketing",
+      "excerpt": "Learn how digital marketing strategies can help your business reach a wider audience and boost revenue.",
+      "image": "https://video.gumlet.io/64c13320d635271420a28723/64ffdd13c2f12d4296dade97/thumbnail-1-0.png?format=auto",
+      "category": "Digital Marketing"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+[
+  {
+    "id": 1,
+    "slug": "web-development",
+    "title": "Web Development",
+    "problem": "Many businesses struggle with outdated, slow, and non-responsive websites that fail to engage users.",
+    "solution": "We build fast, responsive, SEO-friendly websites using modern frameworks and scalable architectures.",
+    "features": [
+      "Responsive design for all devices",
+      "SEO & performance optimization",
+      "CMS integration (WordPress, Strapi, Sanity)",
+      "E-commerce support"
+    ],
+    "useCases": [
+      "Corporate websites",
+      "E-commerce platforms",
+      "Portfolio websites",
+      "Business landing pages"
+    ],
+    "tools": ["React", "Next.js", "TailwindCSS", "Node.js"],
+    "cta": "Get a Quote"
+  },
+  {
+    "id": 2,
+    "slug": "app-development",
+    "title": "App Development",
+    "problem": "Businesses without mobile presence miss out on engaging their customers on the go.",
+    "solution": "We create cross-platform apps with seamless UX and robust performance.",
+    "features": [
+      "iOS & Android apps",
+      "Push notifications & analytics",
+      "Offline-first design",
+      "API integrations"
+    ],
+    "useCases": [
+      "Healthcare apps",
+      "Education platforms",
+      "E-commerce apps",
+      "Booking & scheduling apps"
+    ],
+    "tools": ["React Native", "Flutter", "Firebase"],
+    "cta": "Get a Quote"
+  },
+  {
+    "id": 3,
+    "slug": "digital-marketing",
+    "title": "Digital Marketing",
+    "problem": "Without a solid digital presence, businesses struggle to reach and retain customers.",
+    "solution": "We provide SEO, SEM, and digital campaigns to grow your online presence.",
+    "features": [
+      "SEO optimization",
+      "Social media campaigns",
+      "Google Ads & Analytics",
+      "Content marketing"
+    ],
+    "useCases": [
+      "Small businesses scaling online",
+      "E-commerce growth campaigns",
+      "Brand visibility campaigns"
+    ],
+    "tools": ["Google Analytics", "Meta Ads Manager", "SEMRush"],
+    "cta": "Get a Quote"
+  },
+  {
+    "id": 4,
+    "slug": "ar-vr",
+    "title": "AR/VR",
+    "problem": "Traditional methods fail to create immersive user experiences.",
+    "solution": "We deliver AR/VR solutions for interactive, engaging, and futuristic experiences.",
+    "features": [
+      "Immersive AR applications",
+      "VR training simulators",
+      "Product visualization",
+      "3D interactive experiences"
+    ],
+    "useCases": [
+      "Education & training",
+      "Retail product demos",
+      "Virtual tours",
+      "Healthcare simulations"
+    ],
+    "tools": ["Unity", "Unreal Engine", "ARKit", "ARCore"],
+    "cta": "Get a Quote"
+  },
+  {
+    "id": 5,
+    "slug": "3d-modeling",
+    "title": "3D Modeling",
+    "problem": "Businesses need realistic 3D assets for marketing, games, and digital experiences.",
+    "solution": "We design high-quality 3D models optimized for performance and realism.",
+    "features": [
+      "Custom 3D model design",
+      "Animation-ready assets",
+      "Optimized for AR/VR",
+      "Photorealistic rendering"
+    ],
+    "useCases": [
+      "Gaming",
+      "Product visualization",
+      "Architectural designs",
+      "Marketing campaigns"
+    ],
+    "tools": ["Blender", "Maya", "3ds Max"],
+    "cta": "Get a Quote"
+  },
+  {
+    "id": 6,
+    "slug": "ui-ux-design",
+    "title": "UI/UX Design",
+    "problem": "Poorly designed interfaces reduce user satisfaction and business growth.",
+    "solution": "We craft intuitive, engaging, and conversion-focused UI/UX designs.",
+    "features": [
+      "Wireframing & prototyping",
+      "User research",
+      "Design systems",
+      "Interactive mockups"
+    ],
+    "useCases": [
+      "Mobile apps",
+      "Web dashboards",
+      "E-commerce stores",
+      "SaaS platforms"
+    ],
+    "tools": ["Figma", "Adobe XD", "Sketch"],
+    "cta": "Get a Quote"
+  }
+]
