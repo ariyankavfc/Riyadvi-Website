@@ -1,4 +1,4 @@
 [build]
   base = "riyadvi-website"
+  publish = "dist"
   command = "npm run build"
-  publish = "riyadvi-website/dist"
