@@ -2,6 +2,3 @@
   base = "riyadvi-website"
   command = "npm run build"
   publish = "riyadvi-website/dist"
-
-[build.environment]
-  NODE_VERSION = "20.19.0"
