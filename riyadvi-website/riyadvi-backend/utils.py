@@ -1,20 +1,11 @@
-import os, json
-from werkzeug.utils import secure_filename
-from flask import current_app
+from supabase import create_client
+import os
 
-ALLOWED_EXTENSIONS = {"pdf", "doc", "docx"}
-
-def allowed_file(filename):
-    return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
+supabase = create_client(os.getenv("SUPABASE_URL"), os.getenv("SUPABASE_KEY"))
 
 def save_uploaded_file(file_storage, subfolder="resumes"):
-    if not file_storage or not allowed_file(file_storage.filename):
-        return None
-    filename = secure_filename(file_storage.filename)
-    upload_folder = current_app.config.get("UPLOAD_FOLDER")
-    target_folder = os.path.join(upload_folder, subfolder)
-    os.makedirs(target_folder, exist_ok=True)
-    path = os.path.join(target_folder, filename)
-    file_storage.save(path)
-    # Return relative path from project root for serving
-    return os.path.relpath(path, start=os.path.abspath(os.path.dirname(__file__)))
+    filename = file_storage.filename
+    path = f"{subfolder}/{filename}"
+    data = file_storage.read()
+    supabase.storage.from_(os.getenv("SUPABASE_BUCKET")).upload(path, data)
+    return f"{os.getenv('SUPABASE_URL')}/storage/v1/object/public/{os.getenv('SUPABASE_BUCKET')}/{path}"
