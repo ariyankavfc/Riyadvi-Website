@@ -8,7 +8,7 @@ export default function PortfolioDetail() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    apiGet(`/portfolio/${slug}`)
+    apiGet(`/api/portfolio/${slug}`)
       .then(setProject)
       .catch((e) => console.error(e))
       .finally(() => setLoading(false));

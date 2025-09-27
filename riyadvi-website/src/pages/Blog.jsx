@@ -9,7 +9,7 @@ export default function Blog() {
 
   useEffect(() => {
     let ignore = false;
-    apiGet("/blog")
+    apiGet("/api/blog")
       .then((data) => {
         if (!ignore) {
           // ✅ remove duplicates by unique id

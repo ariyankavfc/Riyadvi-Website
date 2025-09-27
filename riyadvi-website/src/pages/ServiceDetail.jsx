@@ -8,7 +8,7 @@ export default function ServiceDetail() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    apiGet(`/services/${slug}`)
+    apiGet(`/api/services/${slug}`)
       .then(setService)
       .catch((e) => console.error(e))
       .finally(() => setLoading(false));

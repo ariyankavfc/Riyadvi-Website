@@ -7,7 +7,7 @@ export default function ServicesPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    apiGet("/services")
+    apiGet("/api/services")
       .then(setServices)
       .catch((e) => console.error(e))
       .finally(() => setLoading(false));

@@ -5,7 +5,7 @@ export default function About() {
   const [about, setAbout] = useState(null);
 
   useEffect(() => {
-    apiGet("/about").then(setAbout).catch(console.error);
+    apiGet("/api/about").then(setAbout).catch(console.error);
   }, []);
 
   if (!about) return <div className="p-6 text-gray-400">About info not available.</div>;

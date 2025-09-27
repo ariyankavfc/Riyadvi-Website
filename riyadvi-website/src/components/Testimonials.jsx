@@ -5,7 +5,7 @@ export default function Testimonials() {
   const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
-    apiGet("/testimonials")
+    apiGet("/api/testimonials")
       .then((data) => {
         // ✅ Deduplicate by name+quote combo
         const unique = Array.from(

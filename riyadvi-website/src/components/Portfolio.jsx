@@ -10,7 +10,7 @@ export default function Portfolio() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    apiGet("/portfolio").then(setItems).catch(console.error);
+    apiGet("/api/portfolio").then(setItems).catch(console.error);
   }, []);
 
   if (!items.length) return <div className="py-12 text-center text-gray-400">No projects yet.</div>;

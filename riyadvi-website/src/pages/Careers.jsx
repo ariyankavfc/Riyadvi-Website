@@ -11,7 +11,7 @@ export default function Careers() {
   const [ok, setOk] = useState(null);
 
   useEffect(() => {
-    apiGet("/careers").then((data) => {
+    apiGet("/api/careers").then((data) => {
       setJobs(data);
       const depts = Array.from(new Set(data.map(j => j.department).filter(Boolean)));
       setDepartments(["All", ...depts]);
