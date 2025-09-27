@@ -9,6 +9,17 @@ from flask_admin import Admin
 from flask_admin.contrib.sqla import ModelView
 from markupsafe import Markup
 
+from flask_cors import CORS
+
+def create_app():
+    app = Flask(__name__)
+
+    # ✅ Allow your frontend domain
+    CORS(app, resources={r"/api/*": {"origins": "https://riyadvi-website-2nyjt7rt6-ariyankavfcs-projects.vercel.app"}})
+
+
+    return app
+
 # import models (these import db from extensions, no circular create_app call)
 from models import (
     Service,
