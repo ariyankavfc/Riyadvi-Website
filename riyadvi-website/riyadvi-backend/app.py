@@ -21,6 +21,10 @@ from models import (
     JobApplication,
 )
 
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
 def create_app():
     app = Flask(__name__, static_folder="static", template_folder="static")
     app.config.from_object(Config)
