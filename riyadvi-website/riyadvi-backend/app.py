@@ -13,11 +13,13 @@ from flask_cors import CORS
 
 def create_app():
     app = Flask(__name__)
+    
+    # Allow frontend domain
+    CORS(app, resources={r"/api/*": {"origins": "https://riyadvi-website-eta.vercel.app/"}})
 
-    # ✅ Allow your frontend domain
-    CORS(app, resources={r"/api/*": {"origins": "https://riyadvi-website-2nyjt7rt6-ariyankavfcs-projects.vercel.app"}})
-
-
+    # register blueprints
+    from routes import bp
+    app.register_blueprint(bp)
     return app
 
 # import models (these import db from extensions, no circular create_app call)
