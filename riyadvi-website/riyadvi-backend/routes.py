@@ -7,7 +7,7 @@ from utils import save_uploaded_file
 
 bp = Blueprint("api", __name__, url_prefix="/api")
 
-@bp.get("/services")
+@bp.get("/api/services")
 def get_services():
     items = Service.query.all()
     return jsonify(ServiceSchema(many=True).dump(items))
@@ -17,39 +17,39 @@ def get_service(slug):
     s = Service.query.filter_by(slug=slug).first_or_404()
     return jsonify(ServiceSchema().dump(s))
 
-@bp.get("/portfolio")
+@bp.get("/api/portfolio")
 def get_portfolio():
     items = Portfolio.query.all()
     return jsonify(PortfolioSchema(many=True).dump(items))
 
-@bp.get("/portfolio/<slug>")
+@bp.get("/api/portfolio/<slug>")
 def get_portfolio_item(slug):
     p = Portfolio.query.filter_by(slug=slug).first_or_404()
     return jsonify(PortfolioSchema().dump(p))
 
-@bp.get("/blog")
+@bp.get("/api/blog")
 def get_blog():
     posts = BlogPost.query.order_by(BlogPost.created_at.desc()).all()
     return jsonify(BlogSchema(many=True).dump(posts))
 
-@bp.get("/testimonials")
+@bp.get("/api/testimonials")
 def get_testimonials():
     t = Testimonial.query.all()
     return jsonify(TestimonialSchema(many=True).dump(t))
 
-@bp.get("/about")
+@bp.get("/api/about")
 def get_about():
     a = About.query.first()
     if not a:
         return jsonify({}), 404
     return jsonify(AboutSchema().dump(a))
 
-@bp.get("/careers")
+@bp.get("/api/careers")
 def get_careers():
     jobs = CareerJob.query.all()
     return jsonify(CareerJobSchema(many=True).dump(jobs))
 
-@bp.post("/contact")
+@bp.post("/api/contact")
 def post_contact():
     data = request.get_json() or {}
     name = data.get("name"); email = data.get("email"); message = data.get("message")
@@ -71,7 +71,7 @@ def post_contact():
         current_app.logger.exception("mail failed: %s", e)
     return jsonify({"success":True}), 201
 
-@bp.post("/apply")
+@bp.post("/api/apply")
 def post_apply():
     job_id = request.form.get("job_id")
     job_title = request.form.get("job_title")
@@ -105,17 +105,17 @@ def post_apply():
         current_app.logger.exception("mail failed: %s", e)
     return jsonify(JobApplicationSchema().dump(app_record)), 201
 
-@bp.get("/uploads/<path:filename>")
+@bp.get("/api/uploads/<path:filename>")
 def serve_uploads(filename):
     uploads = current_app.config.get("UPLOAD_FOLDER")
     return send_from_directory(uploads, filename)
 
-@bp.get("/admin/contacts")
+@bp.get("/api/admin/contacts")
 def admin_contacts():
     messages = ContactMessage.query.order_by(ContactMessage.created_at.desc()).all()
     return jsonify(ContactSchema(many=True).dump(messages))
 
-@bp.get("/admin/applications")
+@bp.get("/api/admin/applications")
 def admin_applications():
     apps = JobApplication.query.order_by(JobApplication.created_at.desc()).all()
     return jsonify(JobApplicationSchema(many=True).dump(apps))
