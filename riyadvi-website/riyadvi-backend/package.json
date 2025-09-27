@@ -1,0 +1,5 @@
+"scripts": {
+  "build": "flask db upgrade && python seed.py && next build",
+  "postbuild": "echo \"Build complete!\"",
+  "start": "python index.py"
+}
